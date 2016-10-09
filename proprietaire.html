@@ -1,0 +1,310 @@
+<!-- boostrap navbar -->
+<?php
+session_start();
+echo "edewdewdewdwdedew";
+
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>SENimmobilier</title>
+
+    <!-- Bootstrap -->
+    <link href="dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <style type="text/css">
+    .marketing {
+    	text-align: center;
+    	margin-bottom: 20px;
+    }
+    .divider{
+    	margin: 80px 0px;
+    }
+    hr{
+    	border: solid 1px #eee
+    }
+    nav{
+    	margin:0px ;
+    }
+    /* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: black;
+}
+    
+
+
+
+    </style>
+  </head>
+  <body>
+ <nav class="navbar navbar-default navbar-inverse " style="border-radius:0px !important;margin-bottom=0px;">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+   <div class="navbar-header ">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">SEN<em><small class="text-primary">immobilier <span class="glyphicon glyphicon-home"></span></small></em></a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+      	<li><a href="proprietaire.html">home</a></li>
+      	<li><a href="nouveau-bien.php">Mettre en ligne nouveau bien</a></li>
+      
+       
+      </ul>
+      <form class="navbar-form navbar-left" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="entrer la reference d' bien">
+        </div>
+        <button type="submit" class="btn btn-default">rechercher bien</button>
+      </form>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="message.html" class="text-warning">Message</a></li>
+        <li><a href="#">Deconnexion</a></li>
+        
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+<h3 class="text-primary">
+<?php
+
+
+echo 'BIENVENUE'. $_SESSION['email'];
+
+
+
+?></h3>
+ <hr class="divider">
+ 
+  <div class="container">
+    <div class="row">
+    	<h3 class="text-info"><u>Mes Biens</u> </h3>
+  <div class="col-sm-6 col-md-3">
+    <div class="thumbnail">
+      <img src="dist/image/6.jpg" alt="...">
+      <div class="caption">
+        <h3>MAISON</h3>
+        <p>Belle maison au lac rose</p>
+       <p><a href="#" class="btn btn-primary" role="button" name="modifier">modifer</a> <a href="#" class="btn btn-danger" role="button">supprimer</a></p>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6 col-md-3">
+    <div class="thumbnail">
+      <img src="dist/image/6.jpg" alt="...">
+      <div class="caption">
+         <h3>APPARTEMENT</h3>
+        <p>Dans les cite mixta/p>
+       <p><a href="#" class="btn btn-primary" role="button">modifer</a> <a href="#" class="btn btn-danger" role="button">supprimer</a></p>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6 col-md-3">
+    <div class="thumbnail">
+      <img src="dist/image/6.jpg" alt="...">
+      <div class="caption">
+         <h3>MAISON</h3>
+        <p>Belle maison au lac rose</p>
+        <p><a href="#" class="btn btn-primary" role="button">modifer</a> <a href="#" class="btn btn-danger" role="button">supprimer</a></p>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6 col-md-3">
+    <div class="thumbnail">
+      <img src="dist/image/6.jpg" alt="...">
+      <div class="caption">
+         <h3>MAISON</h3>
+        <p>Belle maison au lac rose</p>
+        <p><a href="#" class="btn btn-primary" role="button">modifer</a> <a href="#" class="btn btn-danger" role="button">supprimer</a></p>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6 col-md-3">
+    <div class="thumbnail">
+      <img src="dist/image/6.jpg" alt="...">
+      <div class="caption">
+         <h3>MAISON</h3>
+        <p>Belle maison au lac rose</p>
+        <p><a href="#" class="btn btn-primary" role="button">modifer</a> <a href="#" class="btn btn-danger" role="button">supprimer</a></p>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6 col-md-3">
+    <div class="thumbnail">
+      <img src="dist/image/6.jpg" alt="...">
+      <div class="caption">
+         <h3>MAISON</h3>
+        <p>Belle maison au lac rose</p>
+         <p><a href="#" class="btn btn-primary" role="button">modifer</a> <a href="#" class="btn btn-danger" role="button">supprimer</a></p>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6 col-md-3">
+    <div class="thumbnail">
+      <img src="dist/image/6.jpg" alt="...">
+      <div class="caption">
+         <h3>MAISON</h3>
+        <p>Belle maison au lac rose</p>
+        <p><a href="#" class="btn btn-primary" role="button">modifer</a> <a href="#" class="btn btn-danger" role="button">supprimer</a></p>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6 col-md-3">
+    <div class="thumbnail">
+      <img src="dist/image/6.jpg" alt="...">
+      <div class="caption">
+        <h3>MAISON</h3>
+        <p>Belle maison au lac rose</p>
+         <p><a href="#" class="btn btn-primary" role="button">modifer</a> <a href="#" class="btn btn-danger" role="button">supprimer</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<div class="footer">
+      <div class="containerd">
+        <p class="text-muted">@ Copyright >SIDIBE . 2016<br>keur massar , dakar,senegal</p>
+      </div>
+    </div>
+
+
+    <div class="modal fade" id="message" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 style="color:green;"><span class="glyphicon glyphicon-inbox"></span> Ma boite de reception </h4>
+        </div>
+        <div class="modal-body">
+          <table class="table">
+
+            <thead>
+              <tr>
+
+                <th>EXPEDITEUR</th>
+                <th>CONTENU MESSAGE</th>
+                <th>DATE</th>
+                <th>REFERENCE BIEN</th>
+                <th>action</th>
+
+
+
+              </tr>
+
+
+            </thead>
+            <tbody>
+              <tr>
+                <td>mouhamed.aly.sidibe96@gmail.com</td>
+                <td><a href="index.html">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </a></td>
+                <td>01-01-2016</td>
+                <td><button class="btn btn-primary">lire</button><br><br>
+                  <button class="btn btn-success">repondre</button><br><br>
+                  <button class="btn btn-danger">supprimer </button>
+
+
+
+                </td>
+
+
+
+
+
+
+              </tr>
+               
+              <tr>
+                <td>mouhamed.aly.sidibe96@gmail.com</td>
+                <td>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </td>
+                <td>01-01-2016</td>
+                <td><a class="text-primary">lire</a><br><br>
+                  <a class="text-success">repondre</a><br><br>
+                  <button class="btn btn-danger">supprimer </button>
+
+
+
+                </td>
+
+
+
+
+
+
+              </tr>
+               <tr>
+                <td>mouhamed.aly.sidibe96@gmail.com</td>
+                <td>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </td>
+                <td>01-01-2016</td>
+                <td><button class="btn btn-primary">lire</button><br><br>
+                  <button class="btn btn-success">repondre</button><br><br>
+                  <button class="btn btn-danger">supprimer </button>
+
+
+
+                </td>
+
+
+
+
+
+
+              </tr>
+
+            </tbody>
+
+
+
+
+
+          </table>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-default btn-default pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+ <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="dist/js/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
